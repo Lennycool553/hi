@@ -1,0 +1,841 @@
+local RobloxUpdater = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local BackroundImage = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local ESP = Instance.new("ImageButton")
+local UICorner_2 = Instance.new("UICorner")
+local cminebutton = Instance.new("ImageButton")
+local UICorner_3 = Instance.new("UICorner")
+local noclip = Instance.new("ImageButton")
+local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
+local Infobutton = Instance.new("ImageButton")
+local UICorner_6 = Instance.new("UICorner")
+local InformationenFrame = Instance.new("Frame")
+local MittlereLine = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_7 = Instance.new("UICorner")
+local berschrift = Instance.new("TextLabel")
+local Mitwirkende = Instance.new("TextLabel")
+local textzumit = Instance.new("TextLabel")
+local Keybinds = Instance.new("TextLabel")
+local Tcloseopen = Instance.new("TextLabel")
+local ESPVisual = Instance.new("Frame")
+local MittlereLine_2 = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_8 = Instance.new("UICorner")
+local berschrift_2 = Instance.new("TextLabel")
+local PlayerMods = Instance.new("Frame")
+local MittlereLine_3 = Instance.new("Frame")
+local UIGradient_4 = Instance.new("UIGradient")
+local UICorner_9 = Instance.new("UICorner")
+local berschrift_3 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local username = Instance.new("TextLabel")
+local version = Instance.new("TextLabel")
+
+--Properties:
+
+RobloxUpdater.Name = "Roblox Updater"
+RobloxUpdater.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RobloxUpdater.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = RobloxUpdater
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0, 0, 0, 70)
+MainFrame.Size = UDim2.new(0, 737, 0, 51)
+
+BackroundImage.Name = "Backround Image"
+BackroundImage.Parent = MainFrame
+BackroundImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BackroundImage.BackgroundTransparency = 1.000
+BackroundImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BackroundImage.BorderSizePixel = 0
+BackroundImage.Position = UDim2.new(0.23578684, 0, 3.7167418, 0)
+BackroundImage.Size = UDim2.new(0, 554, 0, 67)
+BackroundImage.Image = "rbxassetid://75780032065312"
+BackroundImage.ImageTransparency = 0.020
+
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = BackroundImage
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 114, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = BackroundImage
+
+ESP.Name = "ESP"
+ESP.Parent = BackroundImage
+ESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESP.BackgroundTransparency = 1.000
+ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.805140555, 0, 0.239315197, 0)
+ESP.Size = UDim2.new(0, 41, 0, 39)
+ESP.Image = "rbxassetid://118441969417890"
+
+UICorner_2.CornerRadius = UDim.new(0, 10)
+UICorner_2.Parent = ESP
+
+cminebutton.Name = "cmine button"
+cminebutton.Parent = BackroundImage
+cminebutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cminebutton.BackgroundTransparency = 1.000
+cminebutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cminebutton.BorderSizePixel = 0
+cminebutton.Position = UDim2.new(0.0249872431, 0, 0.199856848, 0)
+cminebutton.Size = UDim2.new(0, 41, 0, 41)
+cminebutton.Image = "rbxassetid://100587651932578"
+
+UICorner_3.CornerRadius = UDim.new(0, 10)
+UICorner_3.Parent = cminebutton
+
+noclip.Name = "noclip"
+noclip.Parent = BackroundImage
+noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+noclip.BackgroundTransparency = 1.000
+noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+noclip.BorderSizePixel = 0
+noclip.Position = UDim2.new(0.899782717, 0, 0.239315152, 0)
+noclip.Size = UDim2.new(0, 41, 0, 39)
+noclip.Image = "rbxassetid://127098272408477"
+
+UICorner_4.CornerRadius = UDim.new(0, 10)
+UICorner_4.Parent = noclip
+
+UICorner_5.CornerRadius = UDim.new(0, 10)
+UICorner_5.Parent = BackroundImage
+
+Infobutton.Name = "Info button"
+Infobutton.Parent = BackroundImage
+Infobutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Infobutton.BackgroundTransparency = 1.000
+Infobutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Infobutton.BorderSizePixel = 0
+Infobutton.Position = UDim2.new(0.118680939, 0, 0.199856848, 0)
+Infobutton.Size = UDim2.new(0, 41, 0, 41)
+Infobutton.Image = "rbxassetid://137408128219611"
+
+UICorner_6.CornerRadius = UDim.new(0, 10)
+UICorner_6.Parent = Infobutton
+
+InformationenFrame.Name = "Informationen Frame"
+InformationenFrame.Parent = BackroundImage
+InformationenFrame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+InformationenFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InformationenFrame.BorderSizePixel = 0
+InformationenFrame.Position = UDim2.new(0.000405581377, 0, -2.28787923, 0)
+InformationenFrame.Size = UDim2.new(0, 554, 0, 162)
+InformationenFrame.Visible = false
+
+MittlereLine.Name = "Mittlere Line"
+MittlereLine.Parent = InformationenFrame
+MittlereLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MittlereLine.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MittlereLine.BorderSizePixel = 0
+MittlereLine.Position = UDim2.new(0, 0, 0.944444418, 0)
+MittlereLine.Size = UDim2.new(0, 554, 0, 9)
+MittlereLine.ZIndex = 3
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 56, 56)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(56, 56, 56))}
+UIGradient_2.Parent = MittlereLine
+
+UICorner_7.Parent = InformationenFrame
+
+berschrift.Name = "Überschrift"
+berschrift.Parent = InformationenFrame
+berschrift.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+berschrift.BackgroundTransparency = 1.000
+berschrift.BorderColor3 = Color3.fromRGB(0, 0, 0)
+berschrift.BorderSizePixel = 0
+berschrift.Position = UDim2.new(-0.00123527215, 0, 0, 0)
+berschrift.Size = UDim2.new(0, 555, 0, 50)
+berschrift.Font = Enum.Font.SourceSansBold
+berschrift.Text = "Informations"
+berschrift.TextColor3 = Color3.fromRGB(255, 255, 255)
+berschrift.TextSize = 27.000
+berschrift.TextTransparency = 0.190
+
+Mitwirkende.Name = "Mitwirkende"
+Mitwirkende.Parent = InformationenFrame
+Mitwirkende.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mitwirkende.BackgroundTransparency = 1.000
+Mitwirkende.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mitwirkende.BorderSizePixel = 0
+Mitwirkende.Position = UDim2.new(0.23927106, 0, 0.259259254, 0)
+Mitwirkende.Size = UDim2.new(0, 138, 0, 26)
+Mitwirkende.Font = Enum.Font.SourceSansBold
+Mitwirkende.Text = "Mitwirkende:"
+Mitwirkende.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mitwirkende.TextSize = 21.000
+Mitwirkende.TextTransparency = 0.190
+
+textzumit.Name = "text zu mit..."
+textzumit.Parent = Mitwirkende
+textzumit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+textzumit.BackgroundTransparency = 1.000
+textzumit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+textzumit.BorderSizePixel = 0
+textzumit.Position = UDim2.new(-0.294785649, 0, 0.962012649, 0)
+textzumit.Size = UDim2.new(0, 158, 0, 30)
+textzumit.Font = Enum.Font.SourceSansBold
+textzumit.LineHeight = 0.970
+textzumit.Text = "commanderlouis1"
+textzumit.TextColor3 = Color3.fromRGB(255, 255, 255)
+textzumit.TextSize = 21.000
+textzumit.TextTransparency = 0.190
+textzumit.TextWrapped = true
+
+Keybinds.Name = "Keybinds"
+Keybinds.Parent = InformationenFrame
+Keybinds.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keybinds.BackgroundTransparency = 1.000
+Keybinds.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Keybinds.BorderSizePixel = 0
+Keybinds.Position = UDim2.new(0.501477182, 0, 0.259259254, 0)
+Keybinds.Size = UDim2.new(0, 138, 0, 26)
+Keybinds.Font = Enum.Font.SourceSansBold
+Keybinds.Text = " Keybinds:"
+Keybinds.TextColor3 = Color3.fromRGB(255, 255, 255)
+Keybinds.TextSize = 21.000
+Keybinds.TextTransparency = 0.190
+
+Tcloseopen.Name = "T close/open"
+Tcloseopen.Parent = Keybinds
+Tcloseopen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tcloseopen.BackgroundTransparency = 1.000
+Tcloseopen.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tcloseopen.BorderSizePixel = 0
+Tcloseopen.Position = UDim2.new(0.125504211, 0, 0.684715867, 0)
+Tcloseopen.Size = UDim2.new(0, 103, 0, 41)
+Tcloseopen.Font = Enum.Font.SourceSansBold
+Tcloseopen.LineHeight = 0.970
+Tcloseopen.Text = "T close/open"
+Tcloseopen.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tcloseopen.TextSize = 21.000
+Tcloseopen.TextTransparency = 0.190
+Tcloseopen.TextWrapped = true
+
+ESPVisual.Name = "ESP/Visual"
+ESPVisual.Parent = BackroundImage
+ESPVisual.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+ESPVisual.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESPVisual.BorderSizePixel = 0
+ESPVisual.Position = UDim2.new(0.000405581377, 0, -2.28787923, 0)
+ESPVisual.Size = UDim2.new(0, 554, 0, 162)
+ESPVisual.Visible = false
+
+MittlereLine_2.Name = "Mittlere Line"
+MittlereLine_2.Parent = ESPVisual
+MittlereLine_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MittlereLine_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MittlereLine_2.BorderSizePixel = 0
+MittlereLine_2.Position = UDim2.new(0, 0, 0.944444418, 0)
+MittlereLine_2.Size = UDim2.new(0, 554, 0, 9)
+MittlereLine_2.ZIndex = 3
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 56, 56)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(56, 56, 56))}
+UIGradient_3.Parent = MittlereLine_2
+
+UICorner_8.Parent = ESPVisual
+
+berschrift_2.Name = "Überschrift"
+berschrift_2.Parent = ESPVisual
+berschrift_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+berschrift_2.BackgroundTransparency = 1.000
+berschrift_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+berschrift_2.BorderSizePixel = 0
+berschrift_2.Position = UDim2.new(-0.00123527215, 0, 0, 0)
+berschrift_2.Size = UDim2.new(0, 555, 0, 50)
+berschrift_2.Font = Enum.Font.SourceSansBold
+berschrift_2.Text = "ESP - Visual"
+berschrift_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+berschrift_2.TextSize = 27.000
+berschrift_2.TextTransparency = 0.190
+
+PlayerMods.Name = "Player Mods"
+PlayerMods.Parent = BackroundImage
+PlayerMods.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+PlayerMods.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerMods.BorderSizePixel = 0
+PlayerMods.Position = UDim2.new(0.000405581377, 0, -2.28787923, 0)
+PlayerMods.Size = UDim2.new(0, 554, 0, 162)
+PlayerMods.Visible = false
+
+MittlereLine_3.Name = "Mittlere Line"
+MittlereLine_3.Parent = PlayerMods
+MittlereLine_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MittlereLine_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MittlereLine_3.BorderSizePixel = 0
+MittlereLine_3.Position = UDim2.new(0, 0, 0.944444418, 0)
+MittlereLine_3.Size = UDim2.new(0, 554, 0, 9)
+MittlereLine_3.ZIndex = 3
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 56, 56)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(56, 56, 56))}
+UIGradient_4.Parent = MittlereLine_3
+
+UICorner_9.Parent = PlayerMods
+
+berschrift_3.Name = "Überschrift"
+berschrift_3.Parent = PlayerMods
+berschrift_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+berschrift_3.BackgroundTransparency = 1.000
+berschrift_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+berschrift_3.BorderSizePixel = 0
+berschrift_3.Position = UDim2.new(-0.00123527215, 0, 0, 0)
+berschrift_3.Size = UDim2.new(0, 555, 0, 50)
+berschrift_3.Font = Enum.Font.SourceSansBold
+berschrift_3.Text = "Player Mods"
+berschrift_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+berschrift_3.TextSize = 27.000
+berschrift_3.TextTransparency = 0.190
+
+ImageLabel.Parent = BackroundImage
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.451263547, 0, 0.164688334, 0)
+ImageLabel.Size = UDim2.new(0, 54, 0, 44)
+ImageLabel.Image = "rbxassetid://127612672810510"
+
+UIGradient_5.Parent = ImageLabel
+
+UICorner_10.Parent = ImageLabel
+
+TextLabel.Parent = BackroundImage
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.319494575, 0, 0.477611929, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 58)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "V  1.1.0"
+TextLabel.TextColor3 = Color3.fromRGB(76, 6, 69)
+TextLabel.TextSize = 14.000
+
+username.Name = "username"
+username.Parent = MainFrame
+username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+username.BackgroundTransparency = 1.000
+username.BorderColor3 = Color3.fromRGB(0, 0, 0)
+username.BorderSizePixel = 0
+username.Position = UDim2.new(-0.801722348, 0, 5.03979969, 0)
+username.Size = UDim2.new(0, 219, 0, 15)
+username.Font = Enum.Font.SourceSansBold
+username.TextColor3 = Color3.fromRGB(255, 255, 255)
+username.TextScaled = true
+username.TextSize = 74.000
+username.TextTransparency = 0.620
+username.TextWrapped = true
+
+version.Name = "version"
+version.Parent = MainFrame
+version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+version.BackgroundTransparency = 1.000
+version.BorderColor3 = Color3.fromRGB(0, 0, 0)
+version.BorderSizePixel = 0
+version.Position = UDim2.new(-0.766474783, 0, 5.33764172, 0)
+version.Size = UDim2.new(0, 168, 0, 29)
+version.Font = Enum.Font.SourceSansBold
+version.Text = "Vortex Beta GUI V0.1.21 "
+version.TextColor3 = Color3.fromRGB(255, 255, 255)
+version.TextSize = 14.000
+version.TextTransparency = 0.640
+
+-- Scripts:
+
+local function RTBFNM_fake_script() -- UIGradient.LocalScript 
+	local script = Instance.new('LocalScript', UIGradient)
+
+	local uigrid = script.parent
+	
+	while true do
+		uigrid.Rotation += math.random(1, 5)
+		wait(math.random(0.1, 0.5))
+	end
+	
+end
+coroutine.wrap(RTBFNM_fake_script)()
+local function YFOCTYQ_fake_script() -- BackroundImage.T close Open 
+	local script = Instance.new('LocalScript', BackroundImage)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+	    if inputObject.KeyCode == Enum.KeyCode.T then 
+				if script.Parent.Parent.Frame.Visible == false then
+					script.Parent.Parent.Frame.Visible = true
+				else
+					script.Parent.Parent.Frame.Visible = false
+					
+					local frame = script.Parent.Parent.Parent.Frame
+	
+					script.Parent.MouseButton1Click:Connect(function()
+						if frame.Visible == false then
+							frame.Position = UDim2.new(0, 0,0, 10)
+							frame.Visible = true
+							frame:TweenPosition(UDim2.new(0, 0,0, 0),"Out","Back",0.0)
+						else
+							frame:TweenPosition(UDim2.new(0, 0,-40, 0),"In","Back",8)
+							wait(0.5)
+							frame.Visible = false
+						end
+					end)
+				end
+			end
+		end
+	end
+	
+	UserInputService.InputBegan:connect(onKeyPress)
+end
+coroutine.wrap(YFOCTYQ_fake_script)()
+local function KNHM_fake_script() -- BackroundImage.verschieben 
+	local script = Instance.new('LocalScript', BackroundImage)
+
+	
+	local UIS = game:GetService('UserInputService')
+	
+	local frame = script.Parent
+	
+	
+	
+	local dragToggle = nil
+	
+	local dragSpeed = 0.25
+	
+	local dragStart = nil
+	
+	local startPos = nil
+	
+	
+	
+	local function updateInput(input)
+	
+		local delta = input.Position - dragStart
+	
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+	
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	
+	end
+	
+	
+	
+	frame.InputBegan:Connect(function(input)
+	
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+	
+			dragToggle = true
+	
+			dragStart = input.Position
+	
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+	
+				if input.UserInputState == Enum.UserInputState.End then
+	
+					dragToggle = false
+	
+				end
+	
+			end)
+	
+		end
+	
+	end)
+	
+	
+	
+	UIS.InputChanged:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	
+			if dragToggle then
+	
+				updateInput(input)
+	
+			end
+	
+		end
+	
+	end)
+end
+coroutine.wrap(KNHM_fake_script)()
+local function KQZWOFT_fake_script() -- ESP.Script 
+	local script = Instance.new('Script', ESP)
+
+	function Click(mouse)
+	
+		--// Made by Blissful#4992
+		local plr = game.Players.LocalPlayer
+		local camera = game.Workspace.CurrentCamera
+	
+		for i, v in pairs(game.Players:GetChildren()) do
+			local Top = Drawing.new("Line")
+			Top.Visible = false
+			Top.From = Vector2.new(0, 0)
+			Top.To = Vector2.new(200, 200)
+			Top.Color = Color3.fromRGB(255, 0, 0)
+			Top.Thickness = 2
+			Top.Transparency = 1
+	
+			local Bottom = Drawing.new("Line")
+			Bottom.Visible = false
+			Bottom.From = Vector2.new(0, 0)
+			Bottom.To = Vector2.new(200, 200)
+			Bottom.Color = Color3.fromRGB(255, 0, 0)
+			Bottom.Thickness = 2
+			Bottom.Transparency = 1
+	
+			local Left = Drawing.new("Line")
+			Left.Visible = false
+			Left.From = Vector2.new(0, 0)
+			Left.To = Vector2.new(200, 200)
+			Left.Color = Color3.fromRGB(255, 0, 0)
+			Left.Thickness = 2
+			Left.Transparency = 1
+	
+			local Right = Drawing.new("Line")
+			Right.Visible = false
+			Right.From = Vector2.new(0, 0)
+			Right.To = Vector2.new(200, 200)
+			Right.Color = Color3.fromRGB(255, 0, 0)
+			Right.Thickness = 2
+			Right.Transparency = 1
+	
+			function ESP()
+				local connection
+				connection = game:GetService("RunService").RenderStepped:Connect(function()
+					if v.Character ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v.Name ~= plr.Name and v.Character.Humanoid.Health > 0 then 
+						local ScreenPos, OnScreen = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+						if OnScreen then
+							local Scale = v.Character.Head.Size.Y/2
+							local Size = Vector3.new(2, 3, 0) * (Scale * 2)
+							local humpos = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+							local TL = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, Size.Y, 0)).p)
+							local TR = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, Size.Y, 0)).p)
+							local BL = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, -Size.Y, 0)).p)
+							local BR = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, -Size.Y, 0)).p)
+	
+							Top.From = Vector2.new(TL.X, TL.Y)
+							Top.To = Vector2.new(TR.X, TR.Y)
+	
+							Left.From = Vector2.new(TL.X, TL.Y)
+							Left.To = Vector2.new(BL.X, BL.Y)
+	
+							Right.From = Vector2.new(TR.X, TR.Y)
+							Right.To = Vector2.new(BR.X, BR.Y)
+	
+							Bottom.From = Vector2.new(BL.X, BL.Y)
+							Bottom.To = Vector2.new(BR.X, BR.Y)
+	
+							if v.TeamColor == plr.TeamColor then
+								Top.Color = Color3.fromRGB(0, 255, 0)
+								Left.Color = Color3.fromRGB(0, 255, 0)
+								Bottom.Color = Color3.fromRGB(0, 255, 0)
+								Right.Color = Color3.fromRGB(0, 255, 0)
+							else 
+								Top.Color = Color3.fromRGB(255, 0, 0)
+								Left.Color = Color3.fromRGB(255, 0, 0)
+								Bottom.Color = Color3.fromRGB(255, 0, 0)
+								Right.Color = Color3.fromRGB(255, 0, 0)
+							end
+	
+							Top.Visible = true
+							Left.Visible = true
+							Bottom.Visible = true
+							Right.Visible = true
+						else 
+							Top.Visible = false
+							Left.Visible = false
+							Bottom.Visible = false
+							Right.Visible = false
+						end
+					else 
+						Top.Visible = false
+						Left.Visible = false
+						Bottom.Visible = false
+						Right.Visible = false
+						if game.Players:FindFirstChild(v.Name) == nil then
+							connection:Disconnect()
+						end
+					end
+				end)
+			end
+			coroutine.wrap(ESP)()
+		end
+	
+		game.Players.PlayerAdded:Connect(function(newplr) --Parameter gets the new player that has been added
+			local Top = Drawing.new("Line")
+			Top.Visible = false
+			Top.From = Vector2.new(0, 0)
+			Top.To = Vector2.new(200, 200)
+			Top.Color = Color3.fromRGB(255, 0, 0)
+			Top.Thickness = 2
+			Top.Transparency = 1
+	
+			local Bottom = Drawing.new("Line")
+			Bottom.Visible = false
+			Bottom.From = Vector2.new(0, 0)
+			Bottom.To = Vector2.new(200, 200)
+			Bottom.Color = Color3.fromRGB(255, 0, 0)
+			Bottom.Thickness = 2
+			Bottom.Transparency = 1
+	
+			local Left = Drawing.new("Line")
+			Left.Visible = false
+			Left.From = Vector2.new(0, 0)
+			Left.To = Vector2.new(200, 200)
+			Left.Color = Color3.fromRGB(255, 0, 0)
+			Left.Thickness = 2
+			Left.Transparency = 1
+	
+			local Right = Drawing.new("Line")
+			Right.Visible = false
+			Right.From = Vector2.new(0, 0)
+			Right.To = Vector2.new(200, 200)
+			Right.Color = Color3.fromRGB(255, 0, 0)
+			Right.Thickness = 2
+			Right.Transparency = 1
+	
+			function ESP()
+				local connection
+				connection = game:GetService("RunService").RenderStepped:Connect(function()
+					if newplr.Character ~= nil and newplr.Character:FindFirstChild("HumanoidRootPart") ~= nil and newplr.Name ~= plr.Name  and newplr.Character.Humanoid.Health > 0 then
+						local ScreenPos, OnScreen = camera:WorldToViewportPoint(newplr.Character.HumanoidRootPart.Position)
+						if OnScreen then
+							local Scale = newplr.Character.Head.Size.Y/2
+							local Size = Vector3.new(2, 3, 0) * (Scale * 2)
+							local humpos = camera:WorldToViewportPoint(newplr.Character.HumanoidRootPart.Position)
+							local TL = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, Size.Y, 0)).p)
+							local TR = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, Size.Y, 0)).p)
+							local BL = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, -Size.Y, 0)).p)
+							local BR = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, -Size.Y, 0)).p)
+	
+							Top.From = Vector2.new(TL.X, TL.Y)
+							Top.To = Vector2.new(TR.X, TR.Y)
+	
+							Left.From = Vector2.new(TL.X, TL.Y)
+							Left.To = Vector2.new(BL.X, BL.Y)
+	
+							Right.From = Vector2.new(TR.X, TR.Y)
+							Right.To = Vector2.new(BR.X, BR.Y)
+	
+							Bottom.From = Vector2.new(BL.X, BL.Y)
+							Bottom.To = Vector2.new(BR.X, BR.Y)
+	
+							if newplr.TeamColor == plr.TeamColor then
+								Top.Color = Color3.fromRGB(0, 255, 0)
+								Left.Color = Color3.fromRGB(0, 255, 0)
+								Bottom.Color = Color3.fromRGB(0, 255, 0)
+								Right.Color = Color3.fromRGB(0, 255, 0)
+							else 
+								Top.Color = Color3.fromRGB(255, 0, 0)
+								Left.Color = Color3.fromRGB(255, 0, 0)
+								Bottom.Color = Color3.fromRGB(255, 0, 0)
+								Right.Color = Color3.fromRGB(255, 0, 0)
+							end
+	
+							Top.Visible = true
+							Left.Visible = true
+							Bottom.Visible = true
+							Right.Visible = true
+						else 
+							Top.Visible = false
+							Left.Visible = false
+							Bottom.Visible = false
+							Right.Visible = false
+						end
+					else 
+						Top.Visible = false
+						Left.Visible = false
+						Bottom.Visible = false
+						Right.Visible = false
+						if game.Players:FindFirstChild(newplr.Name) == nil then
+							connection:Disconnect()
+						end
+					end
+				end)
+			end
+			coroutine.wrap(ESP)()
+		end)
+		
+		end
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(KQZWOFT_fake_script)()
+local function VULVER_fake_script() -- ESP.Open// close ESP 
+	local script = Instance.new('LocalScript', ESP)
+
+	local Button = script.Parent
+	local frame = script.Parent.Parent["ESP/Visual"]
+	local blurEffect = game.Lighting:FindFirstChild("Blureffect")
+	
+	Button.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+	
+			frame.Visible = true
+			if blurEffect then
+				blurEffect.Enabled = true
+			end
+		else
+	
+			frame.Visible = false
+			if blurEffect then
+				blurEffect.Enabled = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(VULVER_fake_script)()
+local function DGXE_fake_script() -- cminebutton.script 
+	local script = Instance.new('LocalScript', cminebutton)
+
+	local frame = script.Parent.Parent.Parent.Frame
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+			frame.Position = UDim2.new(0, 0,0, 0)
+			frame.Visible = true
+			frame:TweenPosition(UDim2.new(0.306, 0,0.799, 0),"Out","Back",0.3)
+		else
+			frame:TweenPosition(UDim2.new(0.306, 0,0.799, 0),"In","Back",0.3)
+			wait(0.3)
+			frame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(DGXE_fake_script)()
+local function MIDCS_fake_script() -- noclip.Open//close No clip 
+	local script = Instance.new('LocalScript', noclip)
+
+	local Button = script.Parent
+	local frame = script.Parent.Parent["Player Mods"]
+	local blurEffect = game.Lighting:FindFirstChild("Blureffect")
+	
+	Button.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+	
+			frame.Visible = true
+			if blurEffect then
+				blurEffect.Enabled = true
+			end
+		else
+	
+			frame.Visible = false
+			if blurEffect then
+				blurEffect.Enabled = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(MIDCS_fake_script)()
+local function WZXLNYI_fake_script() -- Infobutton.script 
+	local script = Instance.new('LocalScript', Infobutton)
+
+	local frame = script.Parent.Parent.Parent.Frame
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+			frame.Position = UDim2.new(0, 0,0, 0)
+			frame.Visible = true
+			frame:TweenPosition(UDim2.new(0.306, 0,0.799, 0),"Out","Back",0.3)
+		else
+			frame:TweenPosition(UDim2.new(0.306, 0,0.799, 0),"In","Back",0.3)
+			wait(0.3)
+			frame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(WZXLNYI_fake_script)()
+local function OLPRU_fake_script() -- Infobutton.Open//close  Info 
+	local script = Instance.new('LocalScript', Infobutton)
+
+	local Button = script.Parent
+	local frame = script.Parent.Parent["Informationen Frame"]
+	local blurEffect = game.Lighting:FindFirstChild("Blureffect")
+	
+	Button.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+	
+			frame.Visible = true
+			if blurEffect then
+				blurEffect.Enabled = true
+			end
+		else
+	
+			frame.Visible = false
+			if blurEffect then
+				blurEffect.Enabled = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(OLPRU_fake_script)()
+local function PQVIGUR_fake_script() -- username.LocalScript 
+	local script = Instance.new('LocalScript', username)
+
+	local player = game.Players.LocalPlayer
+	
+	if player then
+		script.Parent.Text = "- "..player.Name.." -"
+	end
+end
+coroutine.wrap(PQVIGUR_fake_script)()
+local function TOIPCQ_fake_script() -- MainFrame.base 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	UserInputService = game:GetService("UserInputService")
+	local UI = game.Parent
+	
+	
+	local function changeuistate(input, _gameProcessed)
+		if input.UserInputType == Enum.UserInputType.K then
+			if UI.Visible == true then
+				UI.Visible = false
+			else
+				UI.Visible = true
+			end
+		end
+	end
+	
+	UserInputService.InputBegan:Connect(changeuistate)
+end
+coroutine.wrap(TOIPCQ_fake_script)()
+local function YZVKRL_fake_script() -- MainFrame.T close Open 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+	    if inputObject.KeyCode == Enum.KeyCode.T then 
+				if script.Parent.Parent.MainFrame.Visible == false then
+					script.Parent.Parent.MainFrame.Visible = true
+				else
+					script.Parent.Parent.MainFrame.Visible = false
+				end
+			end
+		end
+	end
+	
+	UserInputService.InputBegan:connect(onKeyPress)
+end
+coroutine.wrap(YZVKRL_fake_script)()
